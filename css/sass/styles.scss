@@ -4,45 +4,12 @@
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
+@import "base/utility";
 @import "components/nav";
 @import "components/button";
+@import "components/cards";
 @import "layout/header";
 @import "layout/information";
 @import "layout/quote";
 @import "layout/call-to-action";
 @import "layout/footer";
-
-
-
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-}
-
-.header {
-  background-color: $color-bg-dark;
-  padding: 0 15% 10%;
-}
-
-.footer {
-    background-color: $color-bg-dark;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-.information, .quote, .call-to-arms {
-padding: 7% 15%;
-}
-
-.flexbox-container {
-  display: flex;
-  justify-content: center;
-}
-
-.call-to-arms .flexbox-container {
-  background-color: #3882f6;
-  border-radius: 10px;
-  padding: 30px 100px;
-}

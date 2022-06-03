@@ -12,8 +12,8 @@ html {
 }
 
 body {
-    box-sizing: border-box;
-      font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -22,13 +22,10 @@ body {
   justify-content: center;
 }
 
-.header {
-  background-color: $color-bg-dark;
-  padding: 0 15% 10%;
-}
-
-.information, .quote, .call-to-arms {
-padding: 7% 15%;
+.information,
+.quote,
+.call-to-arms {
+  padding: 7% 15%;
 }
 .call-to-arms .flexbox-container {
   background-color: $color-primary-light;

@@ -19,6 +19,7 @@ body {
 .flexbox-container {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .information,
@@ -109,7 +110,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0 50px;
+  padding: 20px 0 20rem;
 }
 .header-nav__logo {
   color: #f9faf8;
@@ -208,6 +209,40 @@ body {
   transform: translateY(-1.5rem) scale(1.03);
 }
 
+.photodisplay {
+  position: relative;
+}
+.photodisplay__photo {
+  width: 45%;
+  box-shadow: 0 1.5rem 4rem black;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+.photodisplay__photo--ph1 {
+  left: 0;
+  top: -3rem;
+}
+.photodisplay__photo--ph2 {
+  right: 0;
+  top: 3rem;
+}
+.photodisplay__photo--ph3 {
+  left: 25%;
+  top: 15rem;
+}
+.photodisplay__photo:hover {
+  outline: 1.5rem solid #3882F6;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem black;
+  z-index: 20;
+}
+.photodisplay:hover .photodisplay__photo:not(:hover) {
+  transform: scale(0.9);
+}
+
 .header {
   height: 75vh;
   background-color: #1f2937;
@@ -219,10 +254,6 @@ body {
 
 .header-hero {
   display: flex;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 40%;
-  left: 50%;
 }
 .header-hero__text {
   flex: 1;
@@ -238,21 +269,7 @@ body {
   color: #e5e7eb;
 }
 .header-hero__image {
-  display: flex;
   flex: 1;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-  color: white;
-}
-.header-hero__image--img {
-  width: 90%;
-  border-radius: 1rem;
-  box-shadow: 0 1.5rem 4rem black;
-}
-.header-hero__image--img:hover {
-  transform: scale(1.05) translateY(-0.5rem);
-  box-shadow: 0 2.5rem 4rem black;
 }
 
 .information {

@@ -5,6 +5,7 @@ $color-bg-light: #e5e7eb;
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .header {
@@ -17,6 +18,10 @@ body {
     padding: 20px;
     text-align: center;
     color: white;
+}
+
+.information, .quote, .call-to-arms {
+padding: 7% 15%;
 }
 
 .flexbox-container {
@@ -110,7 +115,6 @@ body {
 }
 
 .information {
-  padding: 0 15% 10%;
   text-align: center;
 
   &__header {
@@ -139,7 +143,6 @@ body {
 
 .quote {
   background-color: #e5e7eb;
-  padding: 10% 25% 10%;
 
   &__text {
     font-size: 36px;
@@ -155,7 +158,6 @@ body {
 }
 
 .call-to-arms {
-  padding: 10% 25% 10%;
 
   &__text {
     flex: 2 0 auto;

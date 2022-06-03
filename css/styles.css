@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .header {
@@ -12,6 +13,10 @@ body {
   padding: 20px;
   text-align: center;
   color: white;
+}
+
+.information, .quote, .call-to-arms {
+  padding: 7% 15%;
 }
 
 .flexbox-container {
@@ -94,7 +99,6 @@ body {
 }
 
 .information {
-  padding: 0 15% 10%;
   text-align: center;
 }
 .information__header {
@@ -119,7 +123,6 @@ body {
 
 .quote {
   background-color: #e5e7eb;
-  padding: 10% 25% 10%;
 }
 .quote__text {
   font-size: 36px;
@@ -132,9 +135,6 @@ body {
   font-weight: 700;
 }
 
-.call-to-arms {
-  padding: 10% 25% 10%;
-}
 .call-to-arms__text {
   flex: 2 0 auto;
   color: white;

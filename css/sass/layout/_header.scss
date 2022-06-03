@@ -1,0 +1,29 @@
+.header-hero {
+  display: flex;
+
+  &__text {
+    flex: 1;
+    padding-right: 50px;
+
+    &--primary-heading {
+      font-weight: 900;
+      font-size: 48px;
+      color: #f9faf8;
+    }
+
+    &--subtext {
+      font-size: 18px;
+      color: #e5e7eb;
+    }
+  }
+
+  &__image {
+    display: flex;
+    flex: 1;
+    background-color: #888;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: white;
+  }
+}

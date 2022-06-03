@@ -1,0 +1,34 @@
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 50px;
+
+  &__logo {
+    color: #f9faf8;
+    font-size: 24px;
+  }
+
+  &__list {
+    font-size: 18px;
+    margin-left: auto;
+
+    &--li {
+      list-style: none;
+      display: inline-block;
+
+      & a {
+          text-decoration: none;
+          color: #e5e7eb;
+
+          &:hover {
+              color: lighten(#e5e7eb, 20%)
+          }
+      }
+    }
+
+    &--li:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+}

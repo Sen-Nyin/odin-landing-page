@@ -1,0 +1,15 @@
+.call-to-arms {
+
+  &__text {
+    flex: 2 0 auto;
+    color: white;
+
+  }
+
+  &__button {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}

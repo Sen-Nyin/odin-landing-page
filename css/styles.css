@@ -1,40 +1,76 @@
-body {
-  font-family: "Roboto", sans-serif;
+*,
+*::after,
+*::before {
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-.header {
-  background-color: #1f2937;
-  padding: 0 15% 10%;
+html {
+  font-size: 62.5%;
 }
 
-.footer {
-  background-color: #1f2937;
-  padding: 20px;
-  text-align: center;
-  color: white;
+body {
+  box-sizing: border-box;
 }
 
-.information, .quote, .call-to-arms {
-  padding: 7% 15%;
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
-
-.flexbox-container {
-  display: flex;
-  justify-content: center;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+  80% {
+    transform: translate(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
-
-.call-to-arms .flexbox-container {
-  background-color: #3882f6;
-  border-radius: 10px;
-  padding: 30px 100px;
+.heading-primary {
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 4.8rem;
+  font-weight: 900;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  /* animation-iteration-count: 3; */
+  /* animation-delay: 1s; */
+  /* animation: moveInLeft 3s ease out */
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  animation-name: moveInRight;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
 }
 
 .header-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  padding: 20px 0 50px;
 }
 .header-nav__logo {
   color: #f9faf8;
@@ -52,8 +88,64 @@ body {
   text-decoration: none;
   color: #e5e7eb;
 }
+.header-nav__list--li a:hover {
+  color: white;
+}
 .header-nav__list--li:not(:first-child) {
   margin-left: 50px;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 4rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.2rem;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+.btn--white::after {
+  background-color: #fff;
+}
+.btn--blue {
+  background-color: #3882f6;
+  color: #fff;
+}
+.btn--blue::after {
+  background-color: #0b64f0;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn--animated {
+  animation: moveInBottom 3s ease-out 1s;
+  animation-fill-mode: backwards;
 }
 
 .header-hero {
@@ -79,22 +171,6 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  color: white;
-}
-
-.btn {
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  padding: 8px 30px;
-}
-.btn--blue {
-  background-color: #3882f6;
-  color: white;
-}
-.btn--outline {
-  background-color: none;
-  border: 2px solid white;
   color: white;
 }
 
@@ -144,4 +220,36 @@ body {
   flex: 1 0 auto;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-color: #1f2937;
+  padding: 0 15% 10%;
+}
+
+.footer {
+  background-color: #1f2937;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.information, .quote, .call-to-arms {
+  padding: 7% 15%;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+.call-to-arms .flexbox-container {
+  background-color: #3882f6;
+  border-radius: 10px;
+  padding: 30px 100px;
 }/*# sourceMappingURL=styles.css.map */

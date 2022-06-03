@@ -1,0 +1,82 @@
+// VARIABLES
+
+$color-bg-dark: #1f2937;
+$color-bg-light: #e5e7eb;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: $color-bg-dark;
+  padding: 0 15% 10%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__logo {
+    color: #f9faf8;
+    font-size: 24px;
+  }
+
+  &__list {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-left: auto;
+
+    &--li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    &--li:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+}
+
+.header-hero {
+  display: flex;
+
+  &__text {
+    flex: 1;
+    padding-right: 50px;
+
+    &--primary-heading {
+      font-weight: 900;
+      font-size: 48px;
+      color: #f9faf8;
+    }
+
+    &--subtext {
+      font-size: 18px;
+      color: #e5e7eb;
+    }
+  }
+
+  &__image {
+      display: flex;
+    flex: 1;
+    background-color: #888;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: white;
+  }
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+}
+
+.header-button {
+    background-color: #3882F6;
+    padding: 8px 30px;
+}

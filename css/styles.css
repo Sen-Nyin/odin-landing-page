@@ -7,6 +7,13 @@ body {
   padding: 0 15% 10%;
 }
 
+.footer {
+  background-color: #1f2937;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
 .flexbox-container {
   display: flex;
   justify-content: center;
@@ -29,13 +36,16 @@ body {
   font-size: 24px;
 }
 .header-nav__list {
-  color: #e5e7eb;
   font-size: 18px;
   margin-left: auto;
 }
 .header-nav__list--li {
   list-style: none;
   display: inline-block;
+}
+.header-nav__list--li a {
+  text-decoration: none;
+  color: #e5e7eb;
 }
 .header-nav__list--li:not(:first-child) {
   margin-left: 50px;

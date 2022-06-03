@@ -7,6 +7,11 @@ body {
   padding: 0 15% 10%;
 }
 
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+}
+
 .header-nav {
   display: flex;
   justify-content: center;
@@ -64,6 +69,30 @@ body {
 }
 
 .header-button {
-  background-color: #3882F6;
+  background-color: #3882f6;
   padding: 8px 30px;
+}
+
+.information {
+  padding: 0 15% 10%;
+  text-align: center;
+}
+.information__header {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  padding-bottom: 30px;
+}
+.information__card {
+  flex: 0 0 180px;
+}
+.information__card:not(last-child) {
+  margin-right: 50px;
+}
+.information__card--illustration {
+  border: 5px solid #3882f6;
+  border-radius: 20px;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */

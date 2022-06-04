@@ -355,6 +355,11 @@ body {
     top: 3rem;
   }
 
+  .photodisplay__photo--ph3 {
+    left: 25%;
+    top: 6rem;
+  }
+
   .header-nav {
     padding: 0 0 0;
   }
